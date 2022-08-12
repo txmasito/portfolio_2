@@ -616,7 +616,6 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    opacity: 0;
     transition: linear 0.2s;
     -webkit-transition: linear 0.2s;
     -moz-transition: linear 0.2s;
@@ -948,7 +947,6 @@ footer > p{
     }
 
     .li{
-        margin-bottom: 50px;
         display: flex;
         justify-content: center;
         opacity: 0;
@@ -1244,6 +1242,10 @@ footer > p{
         position: absolute;
         bottom: 24px;
         left: 211px;
+    }
+
+    .project-info{
+        opacity: 0;
     }
 
 /* ---------- CONTACT ---------- */

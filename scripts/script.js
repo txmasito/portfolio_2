@@ -10,8 +10,6 @@ button.addEventListener('click', () => {
     menu.classList.toggle('menu-show');
     logo.classList.toggle('hidden-logo');
     logoMenu.classList.toggle('logo-menu-show');
-    // background.classList.toggle('background');
-    // console.log('funciona');
 })
 
 // ---------- LEARN MORE FUCTION ----------

@@ -1,0 +1,188 @@
+:root{
+    --color-semi-black: #171717;
+    --color-grey: #212121;
+    --color-white: #ffffff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Product';
+    src: url('/font/Product-Sans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Product';
+    src: url('/font/Product-Sans-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+body{
+    background-color: var(--color-semi-black);
+    font-family: 'Product';
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+h1::after{
+    content: '';
+    width: 350px;
+    height: 1px;
+    background-color: var(--color-white);
+    position: absolute;
+    bottom: -10px;
+    left: calc(50% - 175px);
+}
+
+/* ----------- MAIN ---------- */
+
+main{
+    min-width: 390px;
+    max-width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 0 40px 0 40px;
+}
+
+.project-container{
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+
+.image-project{
+    width: 350px;
+    height: 250px;
+    background-color: var(--color-white);
+    position: relative;
+}
+
+.project-info{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, #171717 0%, rgba(23, 23, 23, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: linear 0.2s;
+    -webkit-transition: linear 0.2s;
+    -moz-transition: linear 0.2s;
+    -ms-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
+}
+
+.project-info:hover{
+    opacity: 100;
+}
+
+.project-info > h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 5px;
+}
+
+.project-info > p{
+    font-size: 14px;
+    color: var(--color-white);
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.button-project{
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    padding-top: 9px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-semi-black);
+    background-color: var(--color-white);
+}
+
+.demo{
+    margin-right: 10px;
+}
+
+.repositorie{
+    width: 90px;
+    color: var(--color-white);
+    background-color: transparent;
+    border: solid 1px var(--color-white);
+    transition: linear 0.2s;
+    -webkit-transition: linear 0.2s;
+    -moz-transition: linear 0.2s;
+    -ms-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
+}
+
+.repositorie:hover{
+    background-color: var(--color-white);
+    color: var(--color-semi-black);
+}
+
+footer{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer > p{
+    color: var(--color-white);
+    opacity: 50%;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .project-info{
+        opacity: 0;
+    }
+
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track{
+        background-color: var(--color-grey);
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: var(--color-white);
+    }
+}
