@@ -159,7 +159,7 @@ header{
 }
 
 .social{
-    width: 105px;
+    width: 65px;
     display: flex;
     justify-content: space-between;
     margin-left: auto;
@@ -482,20 +482,19 @@ main{
 }
 
 .skill-all-container{
-    min-width: 350px;
-    max-width: 730px;
+    width: 250px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 30px;
 }
 
 .skill-container{
+    min-width: 110px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    row-gap: 10px;
 }
 
 .skill-name{
@@ -504,54 +503,6 @@ main{
     font-size: 16px;
     font-weight: 700;
     margin-bottom: 10px;
-}
-
-.progress{
-    width: 350px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.bar-progress{
-    width: 300px;
-    height: 15px;
-    background-color: var(--color-grey);
-    position: relative;
-}
-
-.bar-progress::after{
-    content: '';
-    position: absolute;
-    width: 90%;
-    height: 15px;
-    background-color: var(--color-white);
-}
-
-.persentage{
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--color-white);
-}
-
-.progress-css::after{
-    width: 70%;
-}
-
-.progress-js::after{
-    width: 45%;
-}
-
-.progress-ai::after{
-    width: 60%;
-}
-
-.progress-xd::after{
-    width: 90%;
-}
-
-.progress-fig::after{
-    width: 85%;
 }
 
 /* ---------- PROJECTS ---------- */
@@ -1206,18 +1157,32 @@ footer > p{
     }
 
     .skill-all-container{
-        min-width: 350px;
-        max-width: 730px;
+        width: 550px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        column-gap: 50px;
+        row-gap: 50px;
     }
-
+    
     .skill-container{
+        min-width: 110px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        margin-top: 40px;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    .skill-container > img{
+        width: 150px;
+    }
+    
+    .skill-name{
+        text-transform: uppercase;
+        color: var(--color-white);
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
     }
 
 /* ---------- PROJECTS ---------- */
