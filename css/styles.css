@@ -551,8 +551,33 @@ main{
 .image-project{
     width: 350px;
     height: 250px;
+    background-position: center;
     background-color: var(--color-white);
     position: relative;
+    background-size: cover;
+}
+
+#image-project{
+    background-image: url("https://res.cloudinary.com/dn6ib547h/image/upload/v1675295978/fotitos/cap1_kh6hje.jpg");
+
+}
+
+#image-project2{
+    background-image: url("https://res.cloudinary.com/dn6ib547h/image/upload/v1675295984/fotitos/cap2_alcz5g.jpg");
+}
+
+#image-project3{
+    background-image: url("https://res.cloudinary.com/dn6ib547h/image/upload/v1675295992/fotitos/cap3_jomo28.jpg");
+}
+
+#image-project4{
+    background-image: url("https://res.cloudinary.com/dn6ib547h/image/upload/v1675295996/fotitos/cap4_gb7r2z.jpg");
+}
+
+.image-project > img{
+    width: 350px;
+    height: 250px;
+    background-size: cover;
 }
 
 .project-info{
